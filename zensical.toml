@@ -1,0 +1,27 @@
+[project]
+site_name = "Customer Ticket Ingestion Pipeline"
+site_url = "https://boybothere.github.io/customer_ticket_pipeline/"
+repo_url = "https://github.com/boybothere/customer_ticket_pipeline"
+repo_name = "boybothere/customer_ticket_pipeline"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Installation" = "installation.md" },
+  { "Usage" = "usage.md" },
+  { "API Reference" = "api.md" },
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[project.plugins.mkdocstrings.handlers.python]
+paths = ["src"]
